@@ -6,7 +6,7 @@
 
 
 nav{
-    background-color: #dc95a2;
+    background-color: #a44c8b99;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,18 +19,31 @@ nav ul{
     justify-content: space-evenly;
     width: 60vh;
     font-size: 20px;
+    padding-top: 1rem;
+    
+}
+
+ul li a {
+  text-decoration: none;   
+  color: black;               
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #a44c8b99;
+  padding: 5px 10px;
+  display: block;
+  transition: background-color .6s ease-in-out;
 }
 
 nav ul li:hover{
     cursor: pointer;
-    text-decoration: underline;
-    
+    background-color: #a44c8b99;
+    transform: scale(1.1);
 }
 
 .hero{
     height: 91vh;
     background-color: #dc95a2;
-    background-image: url(./images/background.jpg);
+    background-image: url(./images/bgImage.png);
     display: flex;
 }
 
@@ -102,9 +115,10 @@ nav ul li:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ac6476;
+    background-color: #a44c8b99;
     color: rgb(5, 27, 20);
     border-radius: 25% 10%;
+    transition: background-color .6s ease-in-out;
     
 }
 
@@ -140,3 +154,76 @@ nav ul li:hover{
     background-color:#ab546a ;
 }
 
+#contact{
+    background-image: url(./images/bgImage.png);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+}
+
+.contactLeft{
+    height: 100%;
+    width: 25%;
+}
+
+.contactRight{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.contactForm{
+    max-width: 40rem;
+    width: 100%;
+    background-color: #a44c8b99;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(222, 142, 200, 0.6);
+}
+
+label{
+    display: block;
+    font-weight:bold ;
+    color: white;
+    margin-bottom: .6rem;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+button{
+    background-color: rgb(156, 136, 136);
+    width: 5rem;
+    height: 40px;
+    border-radius: 0.5rem;
+    color: rgb(241, 234, 234);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #6D597A;
+}
+
+.contactLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactLeft p{
+    color: #6D597A;
+    font-weight: bold;
+}
